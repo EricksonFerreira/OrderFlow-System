@@ -1,6 +1,6 @@
-# MontLink E-commerce
+# OrderFlow System
 
-Bem-vindo ao MontLink E-commerce! Este é um sistema de e-commerce básico desenvolvido com Laravel, focado em funcionalidades de gerenciamento de produtos, carrinho de compras e finalização de pedidos.
+Bem-vindo ao OrderFlow System! Este é um sistema de gerenciamento de pedidos desenvolvido com Laravel, focado em funcionalidades de gerenciamento de produtos, carrinho de compras e finalização de pedidos.
 
 ## Funcionalidades Principais
 
@@ -25,8 +25,8 @@ Se você não for usar Docker, certifique-se de que PHP, Composer e um servidor 
 
 1.  **Clone o Repositório:**
     ```bash
-    git clone [URL_DO_SEU_REPOSITORIO] montlink-ecommerce
-    cd montlink-ecommerce
+    git clone https://github.com/EricksonFerreira/OrderFlow-System.git
+    cd OrderFlow-System
     ```
 
 2.  **Instale as Dependências do Composer:**
@@ -45,7 +45,7 @@ Se você não for usar Docker, certifique-se de que PHP, Composer e um servidor 
     ```
 
 5.  **Crie um Banco de Dados MySQL:**
-    Crie um banco de dados vazio (ex: `montlink_db`) no seu servidor MySQL.
+    Crie um banco de dados vazio (ex: `orderflow_db`) no seu servidor MySQL.
 
 6.  **Configure o Banco de Dados no `.env`:**
     Abra o arquivo `.env` e configure as credenciais do seu banco de dados MySQL que você criou.
@@ -54,7 +54,7 @@ Se você não for usar Docker, certifique-se de que PHP, Composer e um servidor 
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
-    DB_DATABASE=montlink_db # O nome que você criou
+    DB_DATABASE=orderflow_db # O nome que você criou
     DB_USERNAME=root        # Seu usuário MySQL
     DB_PASSWORD=            # Sua senha MySQL (vazio se não tiver)
     ```
@@ -71,7 +71,7 @@ Se você não for usar Docker, certifique-se de que PHP, Composer e um servidor 
     MAIL_USERNAME=null
     MAIL_PASSWORD=null
     MAIL_ENCRYPTION=null
-    MAIL_FROM_ADDRESS="no-reply@montlink.com"
+    MAIL_FROM_ADDRESS="no-reply@orderflow.com"
     MAIL_FROM_NAME="${APP_NAME}"
     ```
 
@@ -92,7 +92,7 @@ Se você não for usar Docker, certifique-se de que PHP, Composer e um servidor 
     Configure seu Apache ou Nginx para apontar o `DocumentRoot` para a pasta `public` do projeto.
 
 11. **Acesse a Aplicação:**
-    Acesse a URL configurada no seu servidor web (ex: `http://montlink.test`).
+    Acesse a URL configurada no seu servidor web (ex: `http://orderflow.test`).
 
 ## Testando as Rotas
 
@@ -100,11 +100,6 @@ Para verificar se todas as rotas foram carregadas corretamente, execute:
 ```bash
 php artisan route:list
 ```
-
-<hr>
-
-## Imagem
-![alt text](image.png)
 
 ## Contribuindo
 Sinta-se à vontade para contribuir com este projeto. Por favor, crie um "fork" e envie um "pull request" com suas melhorias.
